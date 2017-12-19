@@ -1,5 +1,8 @@
 package oop_lab5;
 
+import jdk.internal.org.objectweb.asm.tree.analysis.Value;
+import sun.awt.SunHints;
+
 import java.util.Scanner;
 
 //1. input Data from user
@@ -15,6 +18,17 @@ public class InputDataToArray {
         num = inputData(num);
         showData(num);
     }//main
+    private static void summation(int[] num){
+        int total =0;
+        for (int i=0;i<num.length;i++) {
+            total += num[i];
+        }
+        System.out.println("\n The summation of value in array is: "+total);
+        System.out.println("The average value in array is: "+total/MAX);
+
+    }
+
+
 
     private static void showData(int[] num) {
         System.out.println("Data in Array: ");
