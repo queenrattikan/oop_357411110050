@@ -6,11 +6,18 @@ public class mySuperCar {
     public static void main(String[] args) {
         SuperCar superCar1 = new SuperCar();
         superCar1 = inputData (superCar1);
-        System.out.println(superCar1.toString());
+        System.out.println(superCar1.getSuperCarInfo());
+
+
+
+
+
+
     }//main
+
     private static SuperCar inputData (SuperCar s){
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter your supercar data: ");
+        System.out.println("Enter Car info data: ");
         System.out.print("car bran: ");
         s.setBrand(scanner.nextLine());
         System.out.print("car color: ");

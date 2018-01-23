@@ -6,8 +6,8 @@ package oop_lab7;
 //5.country of origin
 
 public class SuperCar {
-    @Override
-    public String toString() {
+
+    public String getSuperCarInfo() {
         return "SuperCar{" +
                 "brand='" + brand + '\'' +
                 ", color='" + color + '\'' +
